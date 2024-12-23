@@ -1,0 +1,35 @@
+﻿<Window x:Class="pipipi.MainWindow"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pipipi"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="760" Width="900">
+    <Grid Background="#FF758EB7">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="677*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <ComboBox x:Name="FishKindSel" HorizontalAlignment="Left" Margin="50,47,0,0" VerticalAlignment="Top" Width="150" Height="26" SelectionChanged="FishKindSel_SelectionChanged" Foreground="#FF6F5F90" Background="#FF6F5F90" BorderBrush="#FF6F5F90"/>
+        <Label Content="Вид рыбы" HorizontalAlignment="Left" Margin="44,21,0,0" VerticalAlignment="Top" Width="75" Foreground="White" FontWeight="Bold"/>
+        <Label Content="Минимальная температура" HorizontalAlignment="Left" Margin="45,82,0,0" VerticalAlignment="Top" Width="176" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="MinTempTxt" HorizontalAlignment="Left" Margin="50,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="26" TextChanged="MinTempTxt_TextChanged"/>
+        <TextBox x:Name="MaxTempTxt" HorizontalAlignment="Left" Margin="530,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="26"/>
+        <Label Content="Максимальная температура" HorizontalAlignment="Left" Margin="530,22,0,0" VerticalAlignment="Top" Width="176" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Дата отгрузки" HorizontalAlignment="Left" Margin="263,22,0,0" VerticalAlignment="Top" Width="176" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="ShipmentDateTxt" HorizontalAlignment="Left" Margin="263,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203" Height="24"/>
+        <TextBox x:Name="TempChangeTxt" HorizontalAlignment="Left" Margin="200,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="328" Height="24"/>
+        <Label Content="Изменение температур" HorizontalAlignment="Left" Margin="290,154,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="White"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Height="383" Width="800" Margin="50,291,50,3">
+            <TextBlock x:Name="ReportResTxt" TextWrapping="Wrap" Height="425" Background="#FF5874A2" Foreground="White" FontWeight="Bold" />
+        </ScrollViewer>
+        <Button x:Name="CheckBtn" Content="Проверить" HorizontalAlignment="Left" Margin="590,234,0,0" VerticalAlignment="Top" Width="100" Click="CheckBtn_Click" FontWeight="Bold" Background="#FF6F5F90" Foreground="White" BorderBrush="#FF6F5F90" Height="25"/>
+        <Button x:Name="LoadDataBtn" Content="Загрузить данные" HorizontalAlignment="Left" Margin="50,234,0,0" VerticalAlignment="Top" Width="190" Click="LoadDataBtn_Click" FontWeight="Bold" Background="#FF6F5F90" Foreground="White" BorderBrush="#FF6F5F90" Height="25"/>
+        <Label Content="Допустимое время переохлаждения" HorizontalAlignment="Left" Margin="263,82,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="OvercoldTimeTxt" HorizontalAlignment="Left" Margin="263,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203" Height="26"/>
+        <Label Content="Допустимое время перегрева" HorizontalAlignment="Left" Margin="530,82,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="OverheatTimeTxt" HorizontalAlignment="Left" Margin="530,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203" Height="26" TextChanged="OverheatTimeTxt_TextChanged"/>
+        <Button x:Name="SaveReport" Content="Сохранить отчет" HorizontalAlignment="Left" Margin="340,234,0,0" VerticalAlignment="Top" Width="150" Height="25" Click="SaveReport_Click" FontWeight="Bold" Background="#FF6F5F90" Foreground="White" BorderBrush="#FF6F5F90"/>
+    </Grid>
+</Window>

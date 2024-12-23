@@ -26,6 +26,9 @@ namespace pipipi
             InitializeComponent();
             FishKindSel.Items.Add("Сёмга");
             FishKindSel.Items.Add("Минтай");
+            FishKindSel.Items.Add("Окунь");
+            FishKindSel.Items.Add("Осётр");
+            FishKindSel.Items.Add("Щука");
         }
 
         private void LoadDataBtn_Click(object sender, RoutedEventArgs e)
@@ -85,6 +88,27 @@ namespace pipipi
                 MaxTempTxt.Text = "-5";
                 MinTempTxt.Text = "-180";
                 OvercoldTimeTxt.Text = "5";
+                OverheatTimeTxt.Text = "120";
+            }
+            if (FishKindSel.SelectedIndex == 2)
+            {
+                MaxTempTxt.Text = "-5";
+                MinTempTxt.Text = "-10";
+                OvercoldTimeTxt.Text = "5";
+                OverheatTimeTxt.Text = "120";
+            }
+            if (FishKindSel.SelectedIndex == 3)
+            {
+                MaxTempTxt.Text = "-6";
+                MinTempTxt.Text = "-14";
+                OvercoldTimeTxt.Text = "5";
+                OverheatTimeTxt.Text = "120";
+            }
+            if (FishKindSel.SelectedIndex == 4)
+            {
+                MaxTempTxt.Text = "-8";
+                MinTempTxt.Text = "-180";
+                OvercoldTimeTxt.Text = "9";
                 OverheatTimeTxt.Text = "120";
             }
         }
@@ -162,6 +186,11 @@ namespace pipipi
         }
 
         private void MinTempTxt_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void ShipmentDateTxt_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }

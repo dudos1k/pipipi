@@ -18,7 +18,7 @@
         <TextBox x:Name="MaxTempTxt" HorizontalAlignment="Left" Margin="530,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="26"/>
         <Label Content="Максимальная температура" HorizontalAlignment="Left" Margin="530,22,0,0" VerticalAlignment="Top" Width="176" FontWeight="Bold" Foreground="White"/>
         <Label Content="Дата отгрузки" HorizontalAlignment="Left" Margin="263,22,0,0" VerticalAlignment="Top" Width="176" FontWeight="Bold" Foreground="White"/>
-        <TextBox x:Name="ShipmentDateTxt" HorizontalAlignment="Left" Margin="263,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203" Height="24"/>
+        <TextBox x:Name="ShipmentDateTxt" HorizontalAlignment="Left" Margin="263,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203" Height="24" TextChanged="ShipmentDateTxt_TextChanged"/>
         <TextBox x:Name="TempChangeTxt" HorizontalAlignment="Left" Margin="200,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="328" Height="24"/>
         <Label Content="Изменение температур" HorizontalAlignment="Left" Margin="290,154,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="White"/>
         <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Height="383" Width="800" Margin="50,291,50,3">
